@@ -1,77 +1,94 @@
 <!DOCTYPE html>
 <html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>채팅 | Kakao Clone</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+      integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>채팅 | Kakao Clone</title>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
-    integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/styles.css">
-</head>
-
-<body>
-  <div class="status-bar">
-    <div class="status-bar__column">
-      <span class="status-bar__clock">12:27</span>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span class="status-bar__clock">12:27</span>
+      </div>
+      <div class="status-bar__column">
+        <i class="fas fa-clock"></i>
+        <i class="fas fa-volume-mute"></i>
+        <i class="fas fa-wifi"></i>
+        <span class="status-bar__battery-level">100%</span>
+        <i class="fas fa-battery-full"></i>
+      </div>
     </div>
-    <div class="status-bar__column">
-      <i class="fas fa-clock"></i>
-      <i class="fas fa-volume-mute"></i>
-      <i class="fas fa-wifi"></i>
-      <span class="status-bar__battery-level">100%</span>
-      <i class="fas fa-battery-full"></i>
-    </div>
-  </div>
-  <header class="header">
-    <div class="header__header-column">
-      <h1 class="header__title">채팅</h1>
-    </div>
-    <div class="header__header-column">
-      <span class="header__icon">
-        <i class="fas fa-search"></i>
-      </span>
-      <span class="header__icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="header__icon">
-        <i class="fas fa-cog"></i>
-      </span>
-    </div>
-  </header>
-  <main class="chats">
-    <ul class="chats__list">
-      <li class="chats__chat chat">
-        <a href="chat.html">
-          <div class="chats__chat friend friend__lg">
-            <div class="friend__column">
-              <img src="images/1.jpg" class="m-avatar friend__avatar" />
-              <div class="friend__content">
-                <span class="friend__name">오타아바타</span>
-                <span class="friend__bottom-text">좋아!</span>
+    <header class="header">
+      <div class="header__header-column">
+        <h1 class="header__title">채팅</h1>
+      </div>
+      <div class="header__header-column">
+        <span class="header__icon">
+          <i class="fas fa-search"></i>
+        </span>
+        <span class="header__icon">
+          <i class="far fa-comment"></i>
+        </span>
+        <span class="header__icon">
+          <i class="fas fa-cog"></i>
+        </span>
+      </div>
+    </header>
+    <main class="chats">
+      <ul class="chats__list">
+        <li class="chats__chat chat">
+          <a href="chat.html">
+            <div class="chats__chat friend friend__lg">
+              <div class="friend__column">
+                <img src="images/1.jpg" class="m-avatar friend__avatar" />
+                <div class="friend__content">
+                  <span class="friend__name">오타아바타</span>
+                  <span class="friend__bottom-text">좋아!</span>
+                </div>
+              </div>
+              <div class="friend__column">
+                <span class="chat__timestamp">Yesterday</span>
               </div>
             </div>
-            <div class="friend__column">
-              <span class="chat__timestamp">Yesterday</span>
-            </div>
-          </div>
-        </a>
-      </li>
-    </ul>
-  </main>
-  <nav class="nav">
-    <ul class="nav__list">
-      <li class="nav__item"><a href="friends.html" class="nav__list-link"><i class="far fa-user"></i></a></li>
-      <li class="nav__item">
-        <a href="index.html" class="nav__list-link">
-          <div class="nav__badge">3</div>
-          <i class="fas fa-comment"></i>
-        </a>
-      </li>
-      <li class="nav__item"><a href="find.html" class="nav__list-link"><i class="fas fa-search"></i></a></li>
-      <li class="nav__item"><a href="more.html" class="nav__list-link"><i class="fas fa-ellipsis-h"></i></a></li>
-    </ul>
-  </nav>
-</body>
-
+          </a>
+        </li>
+      </ul>
+    </main>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="friends.html" class="nav__list-link"
+            ><i class="far fa-user"></i
+          ></a>
+        </li>
+        <li class="nav__item">
+          <a href="index.html" class="nav__list-link">
+            <div class="nav__badge">3</div>
+            <i class="fas fa-comment"></i>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="find.html" class="nav__list-link"
+            ><i class="fas fa-search"></i
+          ></a>
+        </li>
+        <li class="nav__item">
+          <a href="more.html" class="nav__list-link"
+            ><i class="fas fa-ellipsis-h"></i
+          ></a>
+        </li>
+      </ul>
+    </nav>
+    <div class="bigScreen">
+      <span class="bigScreen__text">화면을 작게 만들어 주세요 !!</span>
+    </div>
+  </body>
 </html>

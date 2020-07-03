@@ -1,40 +1,93 @@
-.chat__write {
+.header-wrapper {
+  background-color: white;
+  padding: 5px 0px;
   position: fixed;
-  width: 90%;
-  bottom: 50px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #f9f9fb;
-  padding: 0 20px;
-  border-radius: 40px;
-  margin: 0 auto;
-  left: 0;
-  right: 0;
-}
-.chat__write-column:nth-child(2) {
-  width: 80%;
-}
-
-.chat__write-column input {
-  padding: 20px 10px;
+  top: 0px;
   width: 100%;
-  border: none;
-  font-size: 14px;
-  background-color: #f9f9fb;
-}
-
-.chat__write-column input:focus {
-  outline: none;
-}
-
-.chat-screen {
-  background-image: url("../images/chatBg.png");
-  min-height: 100vh;
+  z-index: 2;
 }
 
 .chats-body {
-  padding: 0;
+  background-image: url("../images/chatBg.png");
+  min-height: 100vh;
+  padding: 10px 0;
+  padding-top: 120px;
+}
+
+.chat__write-container {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+@keyframes float {
+  0% {
+    box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
+      0 18px 36px -18px rgba(0, 0, 0, 0.3),
+      0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+  }
+  50% {
+    box-shadow: 0 30px 60px -60px rgba(50, 50, 93, 0.25),
+      0 18px 36px -18px rgba(0, 0, 0, 0.3),
+      0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+  }
+  100% {
+    box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
+      0 18px 36px -18px rgba(0, 0, 0, 0.3),
+      0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+  }
+}
+
+.chat__write {
+  margin: 0 auto;
+  bottom: 0;
+  width: 100%;
+  border-radius: 0;
+  padding: 20px 60px;
+  width: 100%;
+  border: none;
+  font-size: 14px;
+  transition: width 0.5s ease-in-out, border-radius 0.5s ease-in-out,
+    transform 0.5s ease-in-out;
+}
+
+.chat__write:focus {
+  outline: none;
+  width: 80%;
+  transform: translateY(-50px);
+  border-radius: 40px;
+  box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
+    0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+  animation: float 3s linear infinite forwards;
+}
+
+.chat__write:focus ~ .chat__icon {
+  opacity: 0;
+}
+
+.chat__icon {
+  font-size: 20px;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.chat__icon-left {
+  position: absolute;
+  left: 10px;
+}
+
+.chat__icon-right {
+  position: absolute;
+  right: 10px;
+}
+
+.chat__write-column:nth-child(2) {
+  width: 80%;
 }
 
 .chats-body .header,
@@ -46,6 +99,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   border-top: 1px solid #ededee;
   padding: 0px 20px;
   padding-top: 30px;
@@ -62,18 +116,28 @@
 .message {
   display: flex;
   align-items: center;
-  width: 50%;
+  margin-bottom: 20px;
 }
 
 .message .message__content {
-  width: 80%;
+  width: 100%;
+}
+
+@keyframes spin {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotateY(1turn);
+  }
 }
 
 .incoming-message img {
   width: 50px;
   height: 50px;
   border-radius: 38%;
-  margin-right: 20px;
+  margin-right: 15px;
+  animation: spin 2s linear infinite;
 }
 
 .incoming-message {
@@ -88,4 +152,66 @@
   background-color: white;
   padding: 10px 20px;
   border-radius: 10px;
+}
+
+.incoming-message .message__author {
+  margin-bottom: 10px;
+  display: block;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.incoming-message .message__bubble {
+  border-top-left-radius: 0px;
+}
+
+.sent-message .message__bubble {
+  border-top-right-radius: 0px;
+}
+
+.message .message__bubble {
+  font-size: 13px;
+}
+
+.message__timesptamp {
+  padding: 0px 10px;
+  flex-direction: column;
+  align-self: flex-end;
+  font-size: 10px;
+}
+
+.no__avatar {
+  width: 70px;
+  height: 50px;
+  background-color: red;
+}
+
+@keyframes incomingAnimation {
+  from {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+.incoming-message {
+  animation: incomingAnimation 0.5s ease-out forwards;
+}
+
+@keyframes sentAnimation {
+  from {
+    transform: translateX(200px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+.sent-message {
+  animation: sentAnimation 0.5s ease-out forwards;
 }
