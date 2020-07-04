@@ -14,79 +14,107 @@
   </head>
 
   <body>
-    <div class="status-bar">
-      <div class="status-bar__column">
-        <span class="status-bar__clock">12:27</span>
+    <div class="wrapper">
+      <div class="status-bar">
+        <div class="status-bar__column">
+          <img src="images/icon_sktpng.png" class="status-bar__skt" />
+          <span class="status-bat__skt-text">SKT</span>
+          <i class="fas fa-wifi"></i>
+        </div>
+        <div class="status-bar__column">
+          <span class="status-bar__clock">오후 12:27</span>
+        </div>
+        <div class="status-bar__column">
+          <i class="fas fa-volume-mute"></i>
+          <span class="status-bar__battery-level">100%</span>
+          <i class="fas fa-battery-full"></i>
+        </div>
       </div>
-      <div class="status-bar__column">
-        <i class="fas fa-clock"></i>
-        <i class="fas fa-volume-mute"></i>
-        <i class="fas fa-wifi"></i>
-        <span class="status-bar__battery-level">100%</span>
-        <i class="fas fa-battery-full"></i>
-      </div>
-    </div>
-    <header class="header">
-      <div class="header__header-column">
-        <h1 class="header__title">채팅</h1>
-      </div>
-      <div class="header__header-column">
-        <span class="header__icon">
-          <i class="fas fa-search"></i>
-        </span>
-        <span class="header__icon">
-          <i class="far fa-comment"></i>
-        </span>
-        <span class="header__icon">
-          <i class="fas fa-cog"></i>
-        </span>
-      </div>
-    </header>
-    <main class="chats">
-      <ul class="chats__list">
-        <li class="chats__chat chat">
-          <a href="chat.html">
-            <div class="chats__chat friend friend__lg">
-              <div class="friend__column">
-                <img src="images/1.jpg" class="m-avatar friend__avatar" />
-                <div class="friend__content">
-                  <span class="friend__name">오타아바타</span>
-                  <span class="friend__bottom-text">좋아!</span>
+      <header class="header">
+        <div class="header__header-column">
+          <h1 class="header__title">채팅</h1>
+        </div>
+        <div class="header__header-column">
+          <span class="header__icon">
+            <i class="fas fa-search"></i>
+          </span>
+          <span class="header__icon">
+            <i class="far fa-comment"></i>
+          </span>
+          <span class="header__icon">
+            <img src="images/icon_music.png" />
+          </span>
+          <span class="header__icon">
+            <img src="images/icon_setting.png" />
+          </span>
+        </div>
+      </header>
+      <main class="chats" style="overflow-y: auto;">
+        <ul class="chats__list">
+          <li class="chats__chat chat">
+            <a href="chat1.html">
+              <div class="chats__chat friend friend__lg">
+                <div class="friend__column">
+                  <img src="images/1.jpg" class="m-avatar friend__avatar" />
+                  <div class="friend__content">
+                    <span class="friend__name">오타아바타</span>
+                    <span class="friend__bottom-text">좋아!</span>
+                  </div>
+                </div>
+                <div class="friend__column">
+                  <div class="friend__content-time">
+                    <span class="chat__timestamp">어제</span>
+                    <span class="nav__badge">3</span>
+                  </div>
                 </div>
               </div>
-              <div class="friend__column">
-                <span class="chat__timestamp">Yesterday</span>
+            </a>
+          </li>
+          <li class="chats__chat chat">
+            <a href="chat2.html">
+              <div class="chats__chat friend friend__lg">
+                <div class="friend__column">
+                  <img src="images/5.jpg" class="m-avatar friend__avatar" />
+                  <div class="friend__content">
+                    <span class="friend__name">박정남</span>
+                    <span class="friend__bottom-text">오늘도 화이팅이요 !</span>
+                  </div>
+                </div>
+                <div class="friend__column">
+                  <span class="chat__timestamp">6월 28일</span>
+                </div>
               </div>
-            </div>
-          </a>
-        </li>
-      </ul>
-    </main>
-    <nav class="nav">
-      <ul class="nav__list">
-        <li class="nav__item">
-          <a href="friends.html" class="nav__list-link"
-            ><i class="far fa-user"></i
-          ></a>
-        </li>
-        <li class="nav__item">
-          <a href="index.html" class="nav__list-link">
-            <div class="nav__badge">3</div>
-            <i class="fas fa-comment"></i>
-          </a>
-        </li>
-        <li class="nav__item">
-          <a href="find.html" class="nav__list-link"
-            ><i class="fas fa-search"></i
-          ></a>
-        </li>
-        <li class="nav__item">
-          <a href="more.html" class="nav__list-link"
-            ><i class="fas fa-ellipsis-h"></i
-          ></a>
-        </li>
-      </ul>
-    </nav>
+            </a>
+          </li>
+        </ul>
+      </main>
+
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="friends.html" class="nav__list-link"
+              ><i class="far fa-user"></i
+            ></a>
+          </li>
+          <li class="nav__item">
+            <a href="index.html" class="nav__list-link">
+              <div class="nav__badge">3</div>
+              <i class="fas fa-comment"></i>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="find.html" class="nav__list-link"
+              ><i class="fas fa-hashtag"></i
+            ></a>
+          </li>
+          <li class="nav__item">
+            <a href="more.html" class="nav__list-link"
+              ><i class="fas fa-ellipsis-h"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
     <div class="bigScreen">
       <span class="bigScreen__text">화면을 작게 만들어 주세요 !!</span>
     </div>

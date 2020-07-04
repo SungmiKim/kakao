@@ -1,12 +1,27 @@
-.friends .friends__plus {
-    padding: 20px 0px;
-    margin: 20px 0px;
-    border-top: 1px solid #EDEDEE;
-    border-bottom: 1px solid #EDEDEE;
+.friends {
+  padding: 0 12px;
 }
-.friends__plus .friends__title, 
+
+.friends .friend__name {
+  font-size: 12px;
+  margin-bottom: 3px;
+}
+
+.friends .friend__birthday,
+.friend__name-no-status {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.friends .friends__plus {
+  padding: 10px 0px;
+  margin: 10px 0px;
+  border-top: 1px solid #ededee;
+  border-bottom: 1px solid #ededee;
+}
+.friends__plus .friends__title,
 .friends__list .friends__title {
-    font-size: 14px;
-    opacity: 0.6;
-    margin-bottom: 15px;
+  font-size: 10px;
+  opacity: 0.6;
+  margin-bottom: 15px;
 }

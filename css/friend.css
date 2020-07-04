@@ -1,80 +1,118 @@
 .friend {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
 }
 
 .friend .friend__avatar {
-    width: 60px;
-    height: 60px;
-    border-radius: 38%;
+  width: 30px;
+  height: 30px;
+  border-radius: 38%;
 }
 
 .friend__avatar.g-avatar {
-    width: 83px;
-    height: 83px;
+  width: 45px;
+  height: 45px;
 }
 
 .friend__avatar.m-avatar {
-    width: 70px;
-    height: 70px;
+  width: 40px;
+  height: 40px;
 }
 
 .friend .friend__column {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
+}
+
+.friends__friend i:nth-child(1) {
+  color: white;
+  background-color: #f7696f;
+  width: 30px;
+  height: 30px;
+  font-size: 16px;
+  border-radius: 38%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 12px;
 }
 
 .friend .friend__avatar {
-    margin-right: 17px;
+  margin-right: 10px;
 }
 
 .friend__content .friend__name {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: 700;
+  display: block;
+  font-weight: 700;
+}
+
+.friend__content-time .chat__timestamp {
+  margin-bottom: 5px;
+}
+
+.friend__content-time {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .friend__content .friend__status,
-.friend__content .friend__bottom-text, 
+.friend__content .friend__bottom-text,
 .friend .chat__timestamp {
-    opacity: 0.5;
-}
-
-.friend__content .friend__name {
-    font-size: 22px;
+  opacity: 0.5;
 }
 
 .friend__content .friend__bottom-text {
-    font-size: 18px;
+  font-size: 11px;
 }
 
 .friend__content .friend__status,
 .friend .chat__timestamp {
-    font-size: 15px;
+  font-size: 10px;
+}
+
+.chats__list .nav__badge {
+  color: white;
+  background-color: #dc5d46;
+  width: 15px;
+  height: 15px;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 10px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .friend .friend__now-listening {
-    border: 1px solid #43d376;
-    padding: 8px 10px;
-    border-radius: 20px;
+  border: 1px solid #43d376;
+  padding: 3px 10px;
+  border-radius: 20px;
 }
 
 .friend__now-listening span {
-    font-size: 15px;
-    opacity: 0.6;
+  font-size: 10px;
+  opacity: 0.6;
+}
+
+.friend__birth-number {
+  font-size: 10px;
+  opacity: 0.6;
 }
 
 .friend__now-listening i {
-    color: #5aad77;
-    font-size: 12px;
+  color: #5aad77;
+  font-size: 10px;
 }
 
 .friend__add-btn {
-    background-color: #f5f5f5;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 15px;
-    border-radius: 5px;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  border-radius: 5px;
 }

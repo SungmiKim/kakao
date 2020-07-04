@@ -14,55 +14,148 @@
   </head>
 
   <body>
-    <div class="status-bar">
-      <div class="status-bar__column">
-        <span class="status-bar__clock">12:27</span>
+    <div class="wrapper">
+      <div class="status-bar">
+        <div class="status-bar__column">
+          <span class="status-bar__clock">12:27</span>
+        </div>
+        <div class="status-bar__column">
+          <i class="fas fa-clock"></i>
+          <i class="fas fa-volume-mute"></i>
+          <i class="fas fa-wifi"></i>
+          <span class="status-bar__battery-level">100%</span>
+          <i class="fas fa-battery-full"></i>
+        </div>
       </div>
-      <div class="status-bar__column">
-        <i class="fas fa-clock"></i>
-        <i class="fas fa-volume-mute"></i>
-        <i class="fas fa-wifi"></i>
-        <span class="status-bar__battery-level">100%</span>
-        <i class="fas fa-battery-full"></i>
-      </div>
-    </div>
-    <header class="header">
-      <div class="header__header-column">
-        <a href="more.html" class="header__back-btn">
-          <i class="fas fa-arrow-left fa-2x"></i>
-        </a>
-        <h1 class="header__title">설정</h1>
-      </div>
-      <div class="header__header-column">
-        <span class="header__icon">
-          <i class="fas fa-search"></i>
-        </span>
-      </div>
-    </header>
-    <main class="settings">
-      <section class="settings__section">
-        <ul class="settings__list">
-          <li class="settings__setting">
-            <span class="settings__icon">
-              <i class="fas fa-lock"></i>
-            </span>
-            <span class="settings__title">Privacy</span>
+      <header class="header">
+        <div class="header__header-column">
+          <a href="more.html" class="header__back-btn">
+            <i class="fas fa-arrow-left"></i>
+          </a>
+        </div>
+        <div class="header__header-column">
+          <h1 class="header__title">설정</h1>
+        </div>
+        <div class="header__header-column">
+          <span class="header__icon">
+            <i class="fas fa-search"></i>
+          </span>
+        </div>
+      </header>
+      <main class="settings">
+        <section class="settings__section">
+          <ul class="settings__list-first">
+            <li class="settings__setting">
+              <div class="settings__wrapper">
+                <span class="settings__icon">
+                  <i class="fas fa-bullhorn"></i>
+                </span>
+                <span class="settings__title">공지사항</span>
+              </div>
+            </li>
+            <li class="settings__setting">
+              <div class="settings__wrapper">
+                <span class="settings__icon">
+                  <i class="fas fa-flask"></i>
+                </span>
+                <span class="settings__title settings__flask">실험실</span>
+                <div class="nav__badge">N</div>
+              </div>
+            </li>
+            <li class="settings__setting settings__version">
+              <div class="settings__wrapper">
+                <span class="settings__icon">
+                  <i class="fas fa-info-circle"></i>
+                </span>
+                <span class="settings__title">버전정보</span>
+              </div>
+              <span class="settings__title settings__small-title"
+                >최신 버전</span
+              >
+            </li>
+          </ul>
+
+          <ul class="settings__list-second">
+            <li class="settings__setting">
+              <div class="settings__wrapper">
+                <span class="settings__icon">
+                  <i class="fas fa-lock"></i>
+                </span>
+                <span class="settings__title">개인/보안</span>
+              </div>
+            </li>
+            <li class="settings__setting">
+              <div class="settings__wrapper">
+                <span class="settings__icon">
+                  <i class="far fa-bell"></i>
+                </span>
+                <span class="settings__title">알림</span>
+              </div>
+            </li>
+            <li class="settings__setting settings__version">
+              <div class="settings__wrapper">
+                <span class="settings__icon">
+                  <i class="far fa-user"></i>
+                </span>
+                <span class="settings__title">친구</span>
+              </div>
+            </li>
+            <li class="settings__setting settings__version">
+              <div class="settings__wrapper">
+                <span class="settings__icon">
+                  <i class="far fa-comment"></i>
+                </span>
+                <span class="settings__title">채팅</span>
+              </div>
+            </li>
+            <li class="settings__setting settings__version">
+              <div class="settings__wrapper">
+                <span class="settings__icon">
+                  <i class="fas fa-brush"></i>
+                </span>
+                <span class="settings__title">테마</span>
+              </div>
+              <span class="settings__title settings__small-title"
+                >라이트 모드</span
+              >
+            </li>
+            <li class="settings__setting settings__version">
+              <div class="settings__wrapper">
+                <span class="settings__icon">
+                  <i class="fas fa-phone-alt"></i>
+                </span>
+                <span class="settings__title">통화</span>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </main>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="friends.html" class="nav__list-link"
+              ><i class="far fa-user"></i
+            ></a>
           </li>
-          <li class="settings__setting">
-            <span class="settings__icon">
-              <i class="fas fa-bell"></i>
-            </span>
-            <span class="settings__title">Notifications</span>
+          <li class="nav__item">
+            <a href="index.html" class="nav__list-link">
+              <div class="nav__badge">3</div>
+              <i class="far fa-comment"></i>
+            </a>
           </li>
-          <li class="settings__setting">
-            <span class="settings__icon">
-              <i class="fas fa-user"></i>
-            </span>
-            <span class="settings__title">Friends</span>
+          <li class="nav__item">
+            <a href="find.html" class="nav__list-link"
+              ><i class="fas fa-hashtag"></i
+            ></a>
+          </li>
+          <li class="nav__item">
+            <a href="more.html" class="nav__list-link"
+              ><i class="fas fa-ellipsis-h"></i
+            ></a>
           </li>
         </ul>
-      </section>
-    </main>
+      </nav>
+    </div>
     <div class="bigScreen">
       <span class="bigScreen__text">화면을 작게 만들어 주세요 !!</span>
     </div>
