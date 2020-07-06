@@ -24,10 +24,10 @@
   width: 33%;
 }
 
-.status-bar__column :nth-child(2) {
+.status-bar :nth-child(2) {
   text-align: center;
 }
 
-.status-bar__column :nth-child(3) {
+.status-bar :nth-child(3) {
   text-align: end;
 }

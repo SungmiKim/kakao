@@ -120,3 +120,7 @@
   padding: 15px;
   border-radius: 5px;
 }
+
+.friend__content {
+  width: 100%;
+}
