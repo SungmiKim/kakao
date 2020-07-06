@@ -228,3 +228,73 @@
   cursor: pointer;
   color: blue;
 }
+
+.chat__group {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.group__avatar-first,
+.group__avatar-second {
+  background-color: white;
+  width: 25px;
+  height: 25px;
+  border: 2px solid #f6f6f6;
+  margin-right: 10px;
+  border-radius: 38%;
+}
+
+.group__avatar-second {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+
+#friend__name {
+  font-weight: 600;
+}
+
+#friend__content-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.chat__group-number {
+  font-size: 10px;
+  opacity: 0.5;
+  font-weight: 600;
+  margin-left: 5px;
+}
+
+#message__bubble img {
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+}
+
+.message__bubble {
+  display: flex;
+}
+
+.send-image i {
+  background-color: #92a5b4;
+  color: white;
+  padding: 4px;
+  font-size: 12px;
+  border-radius: 50%;
+  margin-bottom: 40px;
+}
+
+.send-image {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  align-self: flex-end;
+}
+
+#sent-message {
+  display: flex;
+  align-items: flex-end;
+}
