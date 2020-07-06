@@ -26,6 +26,10 @@
   align-items: center;
 }
 
+.friends__friend {
+  cursor: pointer;
+}
+
 .friends__friend i:nth-child(1) {
   color: white;
   background-color: #f7696f;
