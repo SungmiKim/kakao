@@ -1,4 +1,7 @@
-#profile-body {
+#profile-body,
+#profile-body-no,
+#profile-body-park,
+#profile-body-oh {
   z-index: 1;
   position: relative;
   width: 290px;
@@ -6,6 +9,22 @@
 }
 #profile-body::after {
   background-image: url("../images/profile_1.jpg");
+}
+#profile-body-no::after {
+  background-image: url("../images/profile_no.jpg");
+}
+#profile-body-park::after {
+  background-image: url("../images/profile_park.jpg");
+}
+#profile-body-oh::after {
+  background-image: url("../images/profile_oh.jpg");
+}
+
+#profile-body::after,
+#profile-body-no::after,
+#profile-body-park::after,
+#profile-body-oh::after {
+  /* background-image: url("../images/profile_no.jpg"); */
   width: 290px;
   height: 520px;
   z-index: -1;
@@ -48,6 +67,7 @@
   width: 75px;
   height: 75px;
   border-radius: 38%;
+  background-color: white;
 }
 
 .profile__img {
@@ -107,6 +127,9 @@
   }
 }
 
-#profile-body {
+#profile-body,
+#profile-body-no,
+#profile-body-park,
+#profile-body-oh {
   animation: fadeIn 0.5s ease-in-out;
 }

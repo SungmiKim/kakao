@@ -12,12 +12,12 @@
     />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
-
+  <script src="js/script.js"></script>
   <body>
     <div class="wrapper">
       <div class="status-bar">
         <div class="status-bar__column">
-          <img src="images/icon_sktpng.png" class="status-bar__skt" />
+          <i class="fas fa-signal"></i>
           <span class="status-bat__skt-text">SKT</span>
           <i class="fas fa-wifi"></i>
         </div>
@@ -36,10 +36,12 @@
         </div>
         <div class="header__header-column">
           <span class="header__icon">
-            <i class="fas fa-search"></i>
+            <i class="fas fa-search" onclick="search();"></i>
           </span>
           <span class="header__icon">
-            <img src="images/icon_music.png" />
+            <a href="https://www.melon.com/">
+              <img src="images/icon_music.png" />
+            </a>
           </span>
           <span class="header__icon">
             <a href="settings.html">
@@ -48,9 +50,30 @@
           </span>
         </div>
       </header>
-      <main class="more">
+      <div class="container">
+        <!-- 검색 -->
+        <div class="friends__search-content" id="friends__search-content">
+          <div class="friends__search-content-left">
+            <div class="friends__search-icon">
+              <i class="fas fa-search"></i>
+            </div>
+            <div>
+              <input
+                class="friends__search-input"
+                type="text"
+                placeholder="검색"
+              />
+              <i class="fas fa-qrcode"></i>
+            </div>
+          </div>
+          <div class="friends__search-cancel">
+            <span onclick="cancel();">취소</span>
+          </div>
+        </div>
+        <!-- 검색 end -->
+      <main class="more" id="friends">
         <header class="more__header">
-          <div class="friends__friend friend friend__lg">
+          <div class="friends__friend friend friend__lg" onclick="ready();">
             <div class="friend__column more__friend">
               <img src="images/2.jpg" class="g-avatar friend__avatar" />
               <div class="friend__content">
@@ -64,7 +87,7 @@
               </div>
             </div>
           </div>
-          <ul class="more_btn-list">
+          <ul class="more_btn-list" onclick="ready();">
             <li class="more__btn">
               <span class="more__btn-icon">
                 <i class="fas fa-gift"></i>
@@ -91,7 +114,7 @@
             </li>
           </ul>
 
-          <ul class="more_btn-list-second">
+          <ul class="more_btn-list-second" onclick="ready();">
             <li class="more__btn suggestion">
               <span class="more__btn-icon">
                 <i class="fas fa-utensils"></i>

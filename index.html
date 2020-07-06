@@ -12,12 +12,12 @@
     />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
-
+  <script src="js/script.js"></script>
   <body>
     <div class="wrapper">
       <div class="status-bar">
         <div class="status-bar__column">
-          <img src="images/icon_sktpng.png" class="status-bar__skt" />
+          <i class="fas fa-signal"></i>
           <span class="status-bat__skt-text">SKT</span>
           <i class="fas fa-wifi"></i>
         </div>
@@ -36,20 +36,43 @@
         </div>
         <div class="header__header-column">
           <span class="header__icon">
-            <i class="fas fa-search"></i>
+            <i class="fas fa-search" onclick="search();"></i>
           </span>
           <span class="header__icon">
-            <i class="far fa-comment"></i>
+            <i class="far fa-comment" onclick="ready();"></i>
           </span>
           <span class="header__icon">
-            <img src="images/icon_music.png" />
+            <a href="https://www.melon.com/">
+              <img src="images/icon_music.png" />
+            </a>
           </span>
           <span class="header__icon">
-            <img src="images/icon_setting.png" />
+            <img src="images/icon_setting.png" onclick="ready();"/>
           </span>
         </div>
       </header>
-      <main class="chats">
+      <div class="container">
+        <!-- 검색 -->
+        <div class="friends__search-content" id="friends__search-content">
+          <div class="friends__search-content-left">
+            <div class="friends__search-icon">
+              <i class="fas fa-search"></i>
+            </div>
+            <div>
+              <input
+                class="friends__search-input"
+                type="text"
+                placeholder="검색"
+              />
+              <i class="fas fa-qrcode"></i>
+            </div>
+          </div>
+          <div class="friends__search-cancel">
+            <span onclick="cancel();">취소</span>
+          </div>
+        </div>
+        <!-- 검색 end -->
+      <main class="chats" id="friends">
         <ul class="chats__list">
           <li class="chats__chat chat">
             <a href="chat1.html">

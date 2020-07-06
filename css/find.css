@@ -1,31 +1,154 @@
-.find .find__header-list {
+.find__header {
   display: flex;
-  justify-content: space-around;
+  height: 33px;
 }
 
-.find .header-btn {
+.find__header-title {
+  margin: 0 15px;
+}
+
+.find__header :nth-child(1) {
+  font-weight: 600;
+  padding-bottom: 10px;
+  font-size: 17px;
+  border-bottom: 2px solid black;
+}
+.find__header :nth-child(2) {
+  padding-bottom: 10px;
+  font-size: 17px;
+}
+
+.find__first {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 10px;
+  padding-top: 30px;
+}
+
+.find__first :nth-child(2) {
+  background-color: red;
+  margin-left: 5px;
+  padding: 3px;
+  border-radius: 5px;
+}
+
+.find__second {
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.find__third {
+  color: white;
+  display: flex;
+  align-items: center;
+  font-size: 10px;
+  font-weight: 600;
+  background-color: #59576c;
+  padding: 8px;
+  border-radius: 20px;
+  margin-bottom: 18px;
+}
+
+.find__third i {
+  margin-right: 5px;
+}
+
+.find__fourth {
+  color: white;
+  opacity: 0.7;
+  font-size: 9px;
+  margin-bottom: 7px;
+}
+
+.find__fifth {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  border-radius: 5px;
+}
+
+.find__fifth div > span:nth-child(1),
+.find__fifth div > span:nth-child(3) {
+  font-size: 10px;
+  margin: 12px 0;
+}
+
+.find__fifth div > span:nth-child(2) {
+  font-weight: 600;
+  font-size: 13px;
+  margin-top: 13px;
+  margin-bottom: 7px;
+}
+
+.find__fifth div > span {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.find__fifth img {
+  width: 0.5px;
+  height: 50px;
+  margin: 0 13px;
+  opacity: 0.2;
+}
+
+.find {
+  width: 290px;
+  position: relative;
+}
+
+.find__first-content {
+  background-color: #2a2e37;
+  height: 240px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.find .header-btn__title {
-  margin-top: 20px;
-  font-size: 14px;
+.find__second-content {
+  width: 290px;
+  top: 0px;
+  position: absolute;
+  visibility: hidden;
 }
 
-.find .header-btn__icon {
+.text_news div {
+  width: 90%;
+  height: 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin: 0 15px;
   font-size: 12px;
+  border-bottom: 1.5px solid #f0f0f0;
+  padding: 10px 0;
+  padding-bottom: 20px;
 }
 
-.find .find__recommended {
-  margin-top: 30px;
-  padding-top: 15px;
-  border-top: 1px solid #ededee;
+.img_news {
+  height: 40px;
+  margin: 15px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
-.find .find__title {
+.img_news_first img {
+  width: 125px;
+  height: 75px;
+}
+
+.img_news_first div {
+  width: 125px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   font-size: 12px;
-  opacity: 0.7;
-  margin-bottom: 20px;
+  margin-top: 7px;
 }

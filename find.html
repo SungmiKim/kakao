@@ -12,83 +12,137 @@
     />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
-
+  <script src="js/script.js"></script>
   <body>
     <div class="wrapper">
       <div class="status-bar">
         <div class="status-bar__column">
-          <span class="status-bar__clock">12:27</span>
+          <i class="fas fa-signal"></i>
+          <span class="status-bat__skt-text">SKT</span>
+          <i class="fas fa-wifi"></i>
         </div>
         <div class="status-bar__column">
-          <i class="fas fa-clock"></i>
+          <span class="status-bar__clock">오후 12:27</span>
+        </div>
+        <div class="status-bar__column">
           <i class="fas fa-volume-mute"></i>
-          <i class="fas fa-wifi"></i>
           <span class="status-bar__battery-level">100%</span>
           <i class="fas fa-battery-full"></i>
         </div>
       </div>
-      <header class="header">
-        <div class="header__header-column">
-          <h1 class="header__title">Find</h1>
+      <header class="find__header">
+        <div
+          class="find__header-title"
+          id="title-first"
+          onclick="titleChangeFirst();"
+        >
+          #코로나
         </div>
-        <div class="header__header-column">
-          <span class="header__icon">
-            <i class="fas fa-search"></i>
-          </span>
-          <span class="header__icon">
-            <i class="far fa-comment"></i>
-          </span>
-          <span class="header__icon">
-            <i class="fas fa-cog"></i>
-          </span>
+        <div
+          class="find__header-title"
+          id="title-second"
+          onclick="titleChangeSecond();"
+        >
+          뉴스
         </div>
       </header>
-      <main class="find">
-        <header class="find__header">
-          <ul class="find__header-list">
-            <li class="find__header-btn header-btn">
-              <span class="header-btn__icon">
-                <i class="fas fa-qrcode fa-2x"></i>
-              </span>
-              <span class="header-btn__title">QR Code</span>
-            </li>
-            <li class="find__header-btn header-btn">
-              <span class="header-btn__icon"
-                ><i class="far fa-address-book fa-2x"></i
-              ></span>
-              <span class="header-btn__title">Add by Contacts</span>
-            </li>
-            <li class="find__header-btn header-btn">
-              <span class="header-btn__icon"
-                ><i class="fas fa-user-plus fa-2x"></i
-              ></span>
-              <span class="header-btn__title">Add by ID</span>
-            </li>
-            <li class="find__header-btn header-btn">
-              <span class="header-btn__icon"
-                ><i class="far fa-envelope fa-2x"></i
-              ></span>
-              <span class="header-btn__title">Invite</span>
-            </li>
-          </ul>
-        </header>
-        <ul class="find__recommended">
-          <h5 class="find__title">Recommended Friends</h5>
-          <li class="find__friend friend friend__lg">
-            <div class="friend__column">
-              <img src="images/3.png" class="friend__avatar" />
-              <div class="friend__content">
-                <span class="friend__name">김유희</span>
+      <div class="find">
+        <div class="find__first-content" id="find__first-content">
+          <div class="find__first">
+            <div>위기경보</div>
+            <div>심각</div>
+          </div>
+          <div class="find__second">코로나바이러스감염증-19</div>
+          <div class="find__third">
+            <i class="fas fa-qrcode"></i>
+            <span>QR 체크인</span>
+          </div>
+          <div class="find__fourth">
+            07.06 00:00 기준
+          </div>
+          <div class="find__fifth">
+            <div>
+              <span>확진환자</span>
+              <span style="color: red;">13,137</span>
+              <span>▲ 48</span>
+            </div>
+            <img src="images/icon_vertical.jpg" />
+            <div>
+              <span>격리해제</span>
+              <span style="color: #60a4ec;">11,848</span>
+              <span>▲ 16</span>
+            </div>
+            <img src="images/icon_vertical.jpg" />
+            <div>
+              <span>사망자</span>
+              <span>284</span>
+              <span>▲ 1</span>
+            </div>
+            <img src="images/icon_vertical.jpg" />
+            <div>
+              <span>검사진행</span>
+              <span style="color: #afb6bf;">21,292</span>
+              <span>▼ 357</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="find__second-content" id="find__second-content">
+          <div class="text_news">
+            <a
+              href="https://news.naver.com/main/read.nhn?mode=LSD&mid=shm&sid1=102&oid=001&aid=0011727564"
+            >
+              <div>
+                에스엠면세점 인천공항 1터미널 포기…'도미노 철수' 우려(종합)
+              </div>
+            </a>
+            <a
+              href="https://news.naver.com/main/read.nhn?mode=LSD&mid=shm&sid1=100&oid=025&aid=0003015138"
+            >
+              <div>
+                "미안하다" 연신 고개숙인 안희정…옥중 모친상에 與인사 발길
+              </div>
+            </a>
+            <a
+              href="https://news.naver.com/main/read.nhn?mode=LSD&mid=shm&sid1=102&oid=023&aid=0003544430"
+            >
+              <div>
+                "손정우 풀어준 강영수판사, 대법관 안된다" 靑 청원 10만
+              </div>
+            </a>
+            <a
+              href="https://news.naver.com/main/read.nhn?mode=LSD&mid=shm&sid1=100&oid=008&aid=0004435807"
+            >
+              <div>
+                [단독]文대통령 아들, 구로구 아파트 실거주했다
+              </div>
+            </a>
+            <a
+              href="https://news.naver.com/main/read.nhn?mode=LSD&mid=shm&sid1=102&oid=022&aid=0003481614"
+            >
+              <div>
+                “10분만 일찍 도착 했으면…” 택시기사에 ‘살인죄’ 적용될까
+              </div>
+            </a>
+          </div>
+          <div class="img_news">
+            <div class="img_news_first">
+              <img
+                src="https://imgnews.pstatic.net/image/005/2020/07/06/611211110014770821_1_20200706175804291.jpg?type=w647"
+              />
+              <div>“‘뒤질거면 혼자 죽어’라던 주장… 우린 사람 아니었다”</div>
+            </div>
+            <div class="img_news_first">
+              <img
+                src="https://imgnews.pstatic.net/image/001/2020/07/06/PYH2020070612470001300_P4_20200706175812050.jpg?type=w647"
+              />
+              <div>
+                대검 "특임검사 필요…총장 지휘배제 위법" 검사장들 의견 공개(종합)
               </div>
             </div>
-            <div class="friend__column">
-              <div class="friend__add-btn">
-                <i class="fas fa-user-plus"></i>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </main>
+          </div>
+        </div>
+      </div>
       <nav class="nav">
         <ul class="nav__list">
           <li class="nav__item">
