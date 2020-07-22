@@ -38,7 +38,8 @@
   body {
     height: 667px !important;
     padding-bottom: 5px !important;
-    background-color: red !important;
+    /* background-color: red !important; */
+    background-color: green !important;
   }
 
   body,
@@ -81,12 +82,15 @@
     height: 521px !important;
   }
   .friends__search-input {
-    width: 159px !important;
+    width: 90% !important;
   }
   .profile__header-right {
     width: 80px !important;
   }
   .friend__content-wrapper {
     width: 130px !important;
+  }
+  .chat__timestamp {
+    width: 117px !important;
   }
 }
