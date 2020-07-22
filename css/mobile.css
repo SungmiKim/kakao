@@ -34,7 +34,7 @@
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 376px) {
   body {
     height: 667px !important;
     padding-bottom: 5px !important;
