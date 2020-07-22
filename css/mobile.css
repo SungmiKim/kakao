@@ -35,13 +35,6 @@
 }
 
 @media screen and (max-width: 376px) {
-  body {
-    height: 667px !important;
-    padding-bottom: 5px !important;
-    /* background-color: red !important; */
-    background-color: green !important;
-  }
-
   body,
   .chats-body {
     background-size: 740px 670px !important;
@@ -65,10 +58,6 @@
   .friends__plus .friend__content {
     width: 160px !important;
   }
-
-  .find__header-title {
-    font-size: 10px !important;
-  }
   .friend__birth-number {
     width: 15px !important;
   }
@@ -91,6 +80,15 @@
     width: 130px !important;
   }
   .chat__timestamp {
-    width: 117px !important;
+    width: auto !important;
+  }
+  .find__header-title {
+    display: inline-block;
+  }
+  body {
+    height: 667px !important;
+    padding-bottom: 5px !important;
+    background-color: red !important;
+    /* background-color: green !important; */
   }
 }
