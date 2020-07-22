@@ -64,4 +64,8 @@
   .friends__plus .friend__content {
     width: 160px !important;
   }
+
+  .find__header-title {
+    font-size: 10px !important;
+  }
 }
