@@ -57,4 +57,11 @@
   .chat__nav {
     height: 41px !important;
   }
+
+  .friend__content {
+    width: 100px !important;
+  }
+  .friends__plus .friend__content {
+    width: 160px !important;
+  }
 }
