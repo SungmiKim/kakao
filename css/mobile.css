@@ -78,6 +78,9 @@
     width: 60px !important;
   }
   .wrapper {
-    height: 521px;
+    height: 521px !important;
+  }
+  .friends__search-input {
+    width: 159px !important;
   }
 }
