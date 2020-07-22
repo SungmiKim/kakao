@@ -33,3 +33,27 @@
     display: flex !important;
   }
 }
+
+@media screen and (max-width: 375px) {
+  body {
+    height: 667px !important;
+    padding-bottom: 5px !important;
+  }
+
+  body,
+  .chats-body {
+    background-size: 740px 670px !important;
+  }
+
+  .wrapper {
+    margin-top: 60px !important;
+  }
+  .home-btn-center {
+    margin-top: 5px !important;
+    width: 39px !important;
+    height: 39px !important;
+  }
+  .chat__nav {
+    height: 41px !important;
+  }
+}
