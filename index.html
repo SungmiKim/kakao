@@ -1,77 +1,73 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>채팅 | Kakao Clone</title>
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
-      integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="css/styles.css" />
-  </head>
-  
-  <body>
-    <div class="wrapper">
-      <div class="status-bar">
-        <div class="status-bar__column">
-          <i class="fas fa-signal"></i>
-          <span class="status-bat__skt-text">SKT</span>
-          <i class="fas fa-wifi"></i>
-        </div>
-        <div class="status-bar__column">
-          <span class="status-bar__clock">오후 12:27</span>
-        </div>
-        <div class="status-bar__column">
-          <i class="fas fa-volume-mute"></i>
-          <span class="status-bar__battery-level">100%</span>
-          <i class="fas fa-battery-full"></i>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>채팅 | Kakao Clone</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+    integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="wrapper">
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <i class="fas fa-signal"></i>
+        <span class="status-bat__skt-text">SKT</span>
+        <i class="fas fa-wifi"></i>
       </div>
-      <header class="header">
-        <div class="header__header-column">
-          <h1 class="header__title">채팅</h1>
-        </div>
-        <div class="header__header-column">
-          <span class="header__icon">
-            <i class="fas fa-search" onclick="search();"></i>
-          </span>
-          <span class="header__icon">
-            <i class="far fa-comment" onclick="ready();"></i>
-          </span>
-          <span class="header__icon">
-            <a href="https://www.melon.com/">
-              <img src="images/icon_music.png" />
-            </a>
-          </span>
-          <span class="header__icon">
-            <img src="images/icon_setting.png" onclick="ready();"/>
-          </span>
-        </div>
-      </header>
-      <div class="container">
-        <!-- 검색 -->
-        <div class="friends__search-content" id="friends__search-content">
-          <div class="friends__search-content-left">
-            <div class="friends__search-icon">
-              <i class="fas fa-search"></i>
-            </div>
-            <div>
-              <input
-                class="friends__search-input"
-                type="text"
-                placeholder="검색"
-              />
-              <i class="fas fa-qrcode"></i>
-            </div>
+      <div class="status-bar__column">
+        <span class="status-bar__clock">오후 12:27</span>
+      </div>
+      <div class="status-bar__column">
+        <i class="fas fa-volume-mute"></i>
+        <span class="status-bar__battery-level">100%</span>
+        <i class="fas fa-battery-full"></i>
+      </div>
+    </div>
+    <header class="header">
+      <div class="header__header-column">
+        <h1 class="header__title">채팅</h1>
+      </div>
+      <div class="header__header-column">
+        <span class="header__icon">
+          <i class="fas fa-search" onclick="search();"></i>
+        </span>
+        <span class="header__icon">
+          <i class="far fa-comment" onclick="ready();"></i>
+        </span>
+        <span class="header__icon">
+          <a href="https://www.melon.com/">
+            <img src="images/icon_music.png" />
+          </a>
+        </span>
+        <span class="header__icon">
+          <img src="images/icon_setting.png" onclick="ready();" />
+        </span>
+      </div>
+    </header>
+    <div class="container">
+      <!-- 검색 -->
+      <div class="friends__search-content" id="friends__search-content">
+
+        <div class="friends__search-content-left">
+
+          <div class="friends__search-icon">
+            <i class="fas fa-search"></i>
           </div>
-          <div class="friends__search-cancel">
-            <span onclick="cancel();">취소</span>
+
+          <div>
+            <input class="friends__search-input" type="text" placeholder="검색" />
+            <i class="fas fa-qrcode"></i>
           </div>
         </div>
-        <!-- 검색 end -->
+
+        <div class="friends__search-cancel">
+          <span onclick="cancel();">취소</span>
+        </div>
+
+      </div>
+      <!-- 검색 end -->
       <main class="chats" id="friends">
         <ul class="chats__list">
           <li class="chats__chat chat">
@@ -112,16 +108,17 @@
           <li class="chats__chat chat">
             <a href="chat_group.html">
               <div class="chats__chat friend friend__lg">
-                <div class="friend__column" >
+                <div class="friend__column">
                   <div class="chat__group">
-                  <img src="images/4.png" class="group__avatar-first"/>
-                  <img src="images/5.jpg" class="group__avatar-second"/>
-                </div>
-                  <div class="friend__content">
-                    <div id="friend__content-wrapper">
-                    <div id="friend__name" >노보배, 박정남</div>
-                    <div class="chat__group-number">3</div>
+                    <img src="images/4.png" class="group__avatar-first" />
+                    <img src="images/5.jpg" class="group__avatar-second" />
                   </div>
+                  <div class="friend__content">
+                    <div id="friend__content-wrapper" style="
+                    width: 150px;">
+                      <div id="friend__name">노보배, 박정남</div>
+                      <div class="chat__group-number">3</div>
+                    </div>
                     <span class="friend__bottom-text">오늘 즐거웠어요 ^^</span>
                   </div>
                 </div>
@@ -137,9 +134,7 @@
       <nav class="nav">
         <ul class="nav__list">
           <li class="nav__item">
-            <a href="friends.html" class="nav__list-link"
-              ><i class="far fa-user"></i
-            ></a>
+            <a href="friends.html" class="nav__list-link"><i class="far fa-user"></i></a>
           </li>
           <li class="nav__item">
             <a href="index.html" class="nav__list-link">
@@ -148,16 +143,14 @@
             </a>
           </li>
           <li class="nav__item">
-            <a href="find.html" class="nav__list-link"
-              ><i class="fas fa-hashtag"></i
-            ></a>
+            <a href="find.html" class="nav__list-link"><i class="fas fa-hashtag"></i></a>
           </li>
           <li class="nav__item">
-            <a href="more.html" class="nav__list-link"
-              ><i class="fas fa-ellipsis-h"></i
-            ></a>
+            <a href="more.html" class="nav__list-link"><i class="fas fa-ellipsis-h"></i></a>
           </li>
         </ul>
+
+
       </nav>
       <div class="home-btn">
         <div class="home-btn-center"></div>
@@ -167,5 +160,6 @@
       <span class="bigScreen__text">화면을 작게 만들어 주세요 !!</span>
     </div>
     <script src="js/script.js"></script>
-  </body>
+</body>
+
 </html>
